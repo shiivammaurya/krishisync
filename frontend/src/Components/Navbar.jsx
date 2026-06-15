@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="bg-green-600 text-white px-6 py-4 shadow-md">
@@ -8,22 +9,22 @@ function Navbar() {
         </h1>
 
         <ul className="hidden md:flex gap-8">
-          <li className="cursor-pointer hover:text-green-200">
-            Home
-          </li>
+  <Link to="/" className="hover:text-green-200">
+    Home
+  </Link>
 
-          <li className="cursor-pointer hover:text-green-200">
-            Dashboard
-          </li>
+  <Link to="/dashboard" className="hover:text-green-200">
+    Dashboard
+  </Link>
 
-          <li className="cursor-pointer hover:text-green-200">
-            Farmer Groups
-          </li>
+  <Link to="/farmers" className="hover:text-green-200">
+    Farmer Groups
+  </Link>
 
-          <li className="cursor-pointer hover:text-green-200">
-            About
-          </li>
-        </ul>
+  <Link to="/about" className="hover:text-green-200">
+    About
+  </Link>
+</ul>
 
         <div className="text-2xl">
           👤
