@@ -1,9 +1,9 @@
-import Hero from "../Components/Hero";
-import Card from "../Components/Card";
+import Hero from "../components/Hero";
+import Card from "../components/Card";
 
 function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
       <Hero />
 
       <section className="max-w-6xl mx-auto px-6 py-12">
@@ -31,7 +31,7 @@ function Home() {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

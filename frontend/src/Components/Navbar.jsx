@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
+import ThemeToggle from "./ui/ThemeToggle";
 function Navbar() {
   return (
-    <nav className="bg-green-600 text-white px-6 py-4 shadow-md">
+    <nav className="bg-green-600 dark:bg-gray-900 text-white px-6 py-4 shadow-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
 
         <h1 className="text-2xl font-bold">
@@ -26,8 +27,8 @@ function Navbar() {
   </Link>
 </ul>
 
-        <div className="text-2xl">
-          👤
+        <div className="flex items-center gap-4">
+          <ThemeToggle />
         </div>
 
       </div>

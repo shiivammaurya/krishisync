@@ -1,13 +1,13 @@
 function Hero() {
   return (
-    <section className="bg-green-50 py-20">
+    <section className="bg-green-50 dark:bg-gray-800 py-20 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-6 text-center">
-
-        <h1 className="text-5xl font-bold text-green-700 mb-6">
+        
+        <h1 className="text-5xl font-bold text-green-700 dark:text-white mb-6 transition-colors duration-300">
           Smart Farmer Coordination Platform
         </h1>
 
-        <p className="text-xl text-gray-600 mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 transition-colors duration-300">
           Manage harvest readiness and collection schedules efficiently across multiple farmer groups.
         </p>
 
